@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "745666031051",
+    "project_id": "flap-497d4",
+    "storage_bucket": "flap-497d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745666031051:android:9cb08bfc988ada02411a4e",
+        "android_client_info": {
+          "package_name": "com.example.flap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745666031051-qp7r3vdsus03rc7r2i34s0j37o911e7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdfj0-MRH_ud9WRloesrxRN9vHVjvk7gE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745666031051-qp7r3vdsus03rc7r2i34s0j37o911e7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

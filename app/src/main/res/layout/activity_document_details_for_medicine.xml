@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.DrawerSection.merchants.documentDetails.DocumentDetailsForDoctorActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addressProofShop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Address Proof (Upload)"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/addressProofShopPreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/gstShopNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="GSTIN Number (Upload)"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/gstShopNumberPreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shopLicense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Shop's License"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/shopLicensePreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shopOwnerPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Shop Owner's Photo"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/shopOwnerPhotoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shopOwnerSignature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Shop Owner's Signature"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/shopOwnerSignaturePreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shopPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Shop's Photo"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/shopPhotoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <Button
+            android:id="@+id/saveDocumentForShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/red"
+            android:backgroundTint="@color/red"
+            android:outlineSpotShadowColor="@color/red"
+            android:padding="10dp"
+            android:text="Submit Document" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

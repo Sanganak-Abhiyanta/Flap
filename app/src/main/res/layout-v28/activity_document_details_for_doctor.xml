@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.DrawerSection.merchants.documentDetails.DocumentDetailsForDoctorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addressProof"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:text="Address Proof (Upload)" />
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/addressProofPreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/gstinNumber"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="GSTIN Number (Upload)" />
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/gstinNumberPreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/medical_certificate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Medical Certificate (Upload)"
+            android:textAllCaps="false" />
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/medical_certificatePreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clinicLicense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Clinic's License (Upload)"
+            android:textAllCaps="false" />
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/clinicLicensePreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/doctorsPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Doctor's Photo (Upload)"
+            android:textAllCaps="false" />
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/doctorsPhotoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/doctorsSignature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Doctor's Signature (Upload)"
+            android:textAllCaps="false" />
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/doctorsSignaturePreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clinicPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Clinic/Doctor's Photo (Upload)"
+            android:textAllCaps="false" />
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/clinicPhotoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:id="@+id/saveDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:outlineSpotShadowColor="@color/red"
+            android:text="Submit Document" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

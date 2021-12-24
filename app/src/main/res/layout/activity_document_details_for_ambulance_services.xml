@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.DrawerSection.merchants.documentDetails.DocumentDetailsForDoctorActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addressProofAmbulance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Address Proof (Upload)"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/addressProofAmbulancePreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/gstNumberAmbulance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="GSTIN Number (Upload)"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/gstNumberAmbulancePreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/agencyLicense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Agency License"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/agencyLicensePreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/agencyPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Agency Photo"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/agencyPhotoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/agencyOwnerPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Agency Owner's Photo"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/agencyOwnerPhotoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/agencyOwnerSignature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Agency Owner's Signature"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/agencyOwnerSignaturePreview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <Button
+            android:id="@+id/saveDocumentForAmbulance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/red"
+            android:backgroundTint="@color/red"
+            android:outlineSpotShadowColor="@color/red"
+            android:padding="10dp"
+            android:text="Submit Document" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

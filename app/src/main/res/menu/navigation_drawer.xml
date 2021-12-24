@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/my_account"
+            android:icon="@drawable/ic_user"
+            android:title="@string/my_account" />
+        <item
+            android:id="@+id/my_order"
+            android:icon="@drawable/ic_shopping_bag"
+            android:title="@string/my_orders" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/ic_notification"
+            android:title="@string/notification" />
+        <item
+            android:id="@+id/wish_list"
+            android:icon="@drawable/ic_wishlist"
+            android:title="@string/wish_list" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/merchants"
+            android:icon="@drawable/ic_merchant"
+            android:title="@string/merchants" />
+        <item
+            android:id="@+id/delivery_partner"
+            android:icon="@drawable/ic_delivery"
+            android:title="@string/delivery_partner" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/customer_service"
+            android:icon="@drawable/ic_customer_service"
+            android:title="@string/customer_services" />
+        <item
+            android:id="@+id/legal_and_about"
+            android:icon="@drawable/ic_information_desk"
+            android:title="@string/legal_and_about_us" />
+        <item
+            android:id="@+id/log_out"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/log_out" />
+    </group>
+
+</menu>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/drawable-v24/ic_medicine.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/drawable/circle_green.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/drawable/circle_red.xml" value="0.2" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/drawable/ic__emergency.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/drawable/ic_arrow_up_down.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/drawable/ic_doctor.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/drawable/ic_notification.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/drawable/ic_search.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/drawable/ic_settings.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/drawable/ic_shopping_bag.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout-v23/activity_doctors_categroies.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout-v28/activity_document_details_for_doctor.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_ambulance.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_ayurveda_doctors.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_banking_details_for_all.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_browse_all_topic.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_business_details_for_ambullance.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_business_details_for_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_business_details_for_medicine_and_essentials.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_cancer_doctors.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_cardiologist_doctors.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_cart.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_customer_service.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_delivery_partner_uploading_details.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_dentist_doctors.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_dermatologist_doctors.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_doctors_categories.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_doctors_categroie.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_doctors_categroies.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_document_details_for_ambulance_services.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_document_details_for_doctor.xml" value="0.21768707482993196" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_document_details_for_medicine.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_ent_doctors.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_eye_doctors.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_general_physicians_doctors.xml" value="0.2359375" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_help_me.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_homeopathy_doctors.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_legal_and_about.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_login.xml" value="0.2359375" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_manage_otp.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_medicine_list.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_neurologist_doctors.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_notification.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_orthopedic_doctors.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_personal_details_for_delivery_partner.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_product_listing.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_request_call.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_service_type.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_uploading_details.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/activity_your_order.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/doctors_item_layout.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/drawer_header.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_ayurveda_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_cancer_doctor.xml" value="0.1" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_cardiologist_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_dentist_dcotor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_dermatologist_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_emergency.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_ent_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_eye_doctors.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_general_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_gyncologist_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_home.xml" value="0.2359375" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_homeopathy_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_neurologist_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_order_tracking.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_orthopedic_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_pediatrics_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_physiotherapy_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_sexologist_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/fragment_veterinary_doctor.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/medicine_item_layout.xml" value="0.264" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/layout/no_data_found.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/menu-v26/menu.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/menu/bottom_nav.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/menu/menu.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/menu/navigation_drawer.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/xml/searchable.xml" value="0.25" />
+        <entry key="..\:/Users/Sanganak Abhiyanta/AndroidStudioProjects/Flap/app/src/main/res/xml/tabs.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

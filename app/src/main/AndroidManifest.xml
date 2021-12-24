@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flap">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Flap">
+        <activity
+            android:name=".ui.Cart.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.authentic.ManageOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.doctors.DoctorsCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.Notification.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.CustomerService.BrowseAllTopicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.LegalAndAbout.LegalAndAboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.YourOrder.YourOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.CustomerService.RequestCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.CustomerService.CustomerServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Medicine_and_Essentials.MedicineListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Ambulance.AmbulanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.HelpMeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.ProductListingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.PersonalDetailsForDeliveryPartnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.DeliveryPartnerUploadingDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.banking.BankingDetailsForAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.documentDetails.DocumentDetailsForAmbulanceServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.documentDetails.DocumentDetailsForMedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.documentDetails.DocumentDetailsForDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.businessDetails.BusinessDetailsForAmbulanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.businessDetails.BusinessDetailsForMedicineAndEssentialsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.businessDetails.BusinessDetailsForDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.UploadingDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.ServiceTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.authentic.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.authentic.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerSection.merchants.authentic.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
