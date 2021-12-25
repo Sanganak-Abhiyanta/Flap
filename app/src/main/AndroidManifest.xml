@@ -46,7 +46,7 @@
             android:name=".ui.Ambulance.AmbulanceActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.home.HelpMeActivity"
+            android:name=".ui.home.HelpBox.HelpMeActivity"
             android:exported="false" />
         <activity
             android:name=".ui.DrawerSection.merchants.ProductListingActivity"

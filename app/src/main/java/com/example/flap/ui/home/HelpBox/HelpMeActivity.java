@@ -1,4 +1,4 @@
-package com.example.flap.ui.home;
+package com.example.flap.ui.home.HelpBox;
 
 import androidx.appcompat.app.AppCompatActivity;
 

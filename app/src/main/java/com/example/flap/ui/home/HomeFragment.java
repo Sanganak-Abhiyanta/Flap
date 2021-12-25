@@ -11,12 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.flap.R;
 import com.example.flap.ui.Ambulance.AmbulanceActivity;
 import com.example.flap.ui.Medicine_and_Essentials.MedicineListActivity;
 import com.example.flap.ui.doctors.DoctorsCategoriesActivity;
+import com.example.flap.ui.home.HelpBox.HelpMeActivity;
 
 
 public class HomeFragment extends Fragment {
