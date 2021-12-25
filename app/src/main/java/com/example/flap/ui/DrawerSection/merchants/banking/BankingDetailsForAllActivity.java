@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.flap.R;
+import com.example.flap.ui.DrawerSection.merchants.UploadingDetailsActivity;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.Objects;
@@ -17,6 +19,7 @@ import java.util.Objects;
 public class BankingDetailsForAllActivity extends AppCompatActivity {
 
     private MaterialButton panCard, cancelledCheque;
+    private Button submitDetails;
     private ImageView panCardPreview, cancelledChequePreview;
 
     @Override
@@ -28,6 +31,7 @@ public class BankingDetailsForAllActivity extends AppCompatActivity {
 //        getting Ids for Button
         panCard = findViewById(R.id.panCard);
         cancelledCheque = findViewById(R.id.cancelledCheque);
+        submitDetails=findViewById(R.id.saveDocument);
 
 //        getting ids for ImageView
         panCardPreview = findViewById(R.id.panCardPreview);
@@ -44,6 +48,13 @@ public class BankingDetailsForAllActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivityForResult(Intent.createChooser(new Intent().setType("image/*").setAction(Intent.ACTION_GET_CONTENT), "Select Picture"), 20);
+            }
+        });
+
+        submitDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), UploadingDetailsActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
             }
         });
     }

@@ -2,13 +2,18 @@ package com.example.flap.ui.DrawerSection.merchants.documentDetails;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 
+import android.os.health.PackageHealthStats;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -16,21 +21,23 @@ import android.widget.Toast;
 
 import com.example.flap.R;
 
+import com.example.flap.ui.DrawerSection.merchants.UploadingDetailsActivity;
 import com.google.android.material.button.MaterialButton;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 
 public class DocumentDetailsForDoctorActivity extends AppCompatActivity {
 
-//    private ProgressDialog progressDialog;
-
-    //    private final int REQ = 1;
-//    private Bitmap bitmap;
-//    String downloadUrl = "";
     private MaterialButton addressProof, gstNumber, doctorPhoto, clinicPhoto, clinicLicense, signature, medicalCertificate;
     private ImageView addressProofPreview, gstNumberPreview, doctorPhotoPreview, clinicPhotoPreview, clinicLicensePreview, signaturePreview, medicalCertificatePreview;
     private Button submitButton;
+    private ArrayList imageList;
+    private FirebaseStorage storage;
+    private FirebaseDatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +45,9 @@ public class DocumentDetailsForDoctorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_document_details_for_doctor);
 
         Objects.requireNonNull(getSupportActionBar()).setTitle("Upload Doctor's Documents");
+
+        storage = FirebaseStorage.getInstance();
+        database = FirebaseDatabase.getInstance();
 
 //        getting id for button
         addressProof = findViewById(R.id.addressProof);
@@ -49,6 +59,8 @@ public class DocumentDetailsForDoctorActivity extends AppCompatActivity {
         medicalCertificate = findViewById(R.id.medical_certificate);
 
         submitButton = findViewById(R.id.saveDocument);
+
+        imageList = new ArrayList<>();
 
 //        getting Id for ImageView
 
@@ -62,87 +74,67 @@ public class DocumentDetailsForDoctorActivity extends AppCompatActivity {
         medicalCertificatePreview = findViewById(R.id.medical_certificatePreview);
 
 
-        addressProof.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 10);
+        addressProof.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), 10);
 
 
-            }
         });
 
-        gstNumber.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 20);
-            }
+        gstNumber.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), 20);
         });
 
-        doctorPhoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 30);
-            }
+        doctorPhoto.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), 30);
         });
 
-        clinicLicense.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 40);
-            }
+        clinicLicense.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), 40);
         });
 
-        clinicPhoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 50);
-            }
+        clinicPhoto.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), 50);
         });
 
-        signature.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 60);
-            }
+        signature.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), 60);
         });
 
-        medicalCertificate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), 70);
-            }
+        medicalCertificate.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), 70);
         });
 
-        submitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(DocumentDetailsForDoctorActivity.this, "Document Submitted", Toast.LENGTH_SHORT).show();
-            }
+        submitButton.setOnClickListener(v -> {
+//            uploadImages();
+            Toast.makeText(DocumentDetailsForDoctorActivity.this, "Document Submitted", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(), UploadingDetailsActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
         });
 
 
     }
+
+//    private void uploadImages() { }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -150,59 +142,51 @@ public class DocumentDetailsForDoctorActivity extends AppCompatActivity {
 
         if (resultCode == RESULT_OK) {
 
-            // compare the resultCode with the
-            // SELECT_PICTURE constant
-
             // Get the url of the image from data
             assert data != null;
             Uri selectedImageUri = data.getData();
-//            try {
-//                bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), selectedImageUri);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
 
-            if (null != selectedImageUri) {
+            if (selectedImageUri != null) {
 
                 switch (requestCode) {
                     case 10:
                         addressProofPreview.setImageURI(selectedImageUri);
                         addressProofPreview.setVisibility(View.VISIBLE);
-
+                        imageList.add(0, selectedImageUri);
                         break;
                     case 20:
                         gstNumberPreview.setImageURI(selectedImageUri);
                         gstNumberPreview.setVisibility(View.VISIBLE);
+                        imageList.add(1, selectedImageUri);
                         break;
                     case 30:
                         doctorPhotoPreview.setImageURI(selectedImageUri);
                         doctorPhotoPreview.setVisibility(View.VISIBLE);
+                        imageList.add(2, selectedImageUri);
                         break;
                     case 40:
                         clinicLicensePreview.setImageURI(selectedImageUri);
                         clinicLicensePreview.setVisibility(View.VISIBLE);
+                        imageList.add(3, selectedImageUri);
                         break;
                     case 50:
                         clinicPhotoPreview.setImageURI(selectedImageUri);
                         clinicPhotoPreview.setVisibility(View.VISIBLE);
+                        imageList.add(4, selectedImageUri);
                         break;
 
                     case 60:
                         signaturePreview.setImageURI(selectedImageUri);
                         signaturePreview.setVisibility(View.VISIBLE);
+                        imageList.add(5, selectedImageUri);
                         break;
                     case 70:
                         medicalCertificatePreview.setImageURI(selectedImageUri);
                         medicalCertificatePreview.setVisibility(View.VISIBLE);
+                        imageList.add(6, selectedImageUri);
                         break;
-
                 }
-
-
             }
-
         }
-
-
     }
 }

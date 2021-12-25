@@ -14,11 +14,11 @@
     <string name="customer_services">Customer Services</string>
     <string name="legal_and_about_us">Legal and AboutUs</string>
     <string name="log_out">Log Out</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="start">Start</string>
     <string name="close">Close</string>
-    <string name="ambulance">AMBULANCE</string>
+    <string name="ambulance">Ambulance</string>
     <string name="medicine">Medicine &amp; Essentials</string>
     <string name="doctors">Doctors</string>
     <string name="eyes">Eyes</string>
@@ -87,7 +87,6 @@
     <string name="fee">Fee :</string>
     <string name="book_appointment">Book Appointment</string>
     <string name="cart">Cart</string>
-    <!--    <string name="notification">Notification</string>-->
     <string name="search">Search</string>
     <string name="browse_all_help_topic">Browse All Help Topic</string>
     <string name="contact_us">Contact Us</string>
@@ -104,9 +103,6 @@
     <string name="add_details">Add Details</string>
     <string name="product_listing">Product Listing</string>
     <string name="bank_details">Bank Details</string>
-<!--    <string name="add_details">Add Details</string>-->
-<!--    <string name="add_details">Add Details</string>-->
-<!--    <string name="add_details">Add Details</string>-->
     <string name="documentation">Documentation</string>
     <string name="business_details">Business Details</string>
     <string name="doctors_clinic_name">Doctors/Clinic Name</string>
@@ -132,10 +128,5 @@
     <string name="submit_document">Submit Document</string>
     <string name="address">Address</string>
     <string name="photo">Photo</string>
-    <string name="submit_document">Submit Document</string>
-    <!--    <string name="upload_prescription">Upload Prescription</string>-->
-    <!--    <string name="ayurveda">Ayurveda</string>-->
-    <!--    <string name="cardiologist">Cardiologist</string>-->
-    <!--    <string name="dentist">Dentist</string>-->
 
 </resources>

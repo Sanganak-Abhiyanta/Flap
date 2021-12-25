@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.flap.R;
+import com.example.flap.ui.DrawerSection.merchants.UploadingDetailsActivity;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.Objects;
@@ -106,6 +107,7 @@ public class DocumentDetailsForMedicineActivity extends AppCompatActivity {
         submitDocumentForShop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), UploadingDetailsActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
                 Toast.makeText(DocumentDetailsForMedicineActivity.this, "Document Submitted", Toast.LENGTH_SHORT).show();
             }
         });

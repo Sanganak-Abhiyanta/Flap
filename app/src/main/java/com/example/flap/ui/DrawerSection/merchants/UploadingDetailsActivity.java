@@ -120,22 +120,19 @@ public class UploadingDetailsActivity extends AppCompatActivity {
 
         });
 
-        bankDetails.setOnClickListener(v ->
-                startActivity(new Intent(UploadingDetailsActivity.this, BankingDetailsForAllActivity.class).putExtra("serviceType", serviceType))
-        );
-
+        bankDetails.setOnClickListener(v -> startActivity(new Intent(UploadingDetailsActivity.this, BankingDetailsForAllActivity.class).putExtra("serviceType", serviceType)));
         productListing.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), ProductListingActivity.class).putExtra("serviceType", serviceType)));
 
-
         saveAndExit.setOnClickListener(v -> {
-            if (doneBusinessDetails.equals("doneBusiness") && doneDocumentation.equals("doneDocument") && doneBankingDetails.equals("doneBank") && doneProductListing.equals("doneProducts"))
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-            else if (doneBusinessDetails.equals("doneBusiness") && doneDocumentation.equals("doneDocument") && doneBankingDetails.equals("doneBank"))
-                Toast.makeText(getApplicationContext(), "Product Listing is not Completed!", Toast.LENGTH_SHORT).show();
-            else if (doneBusinessDetails.equals("doneBusiness") && doneDocumentation.equals("doneDocument"))
-                Toast.makeText(getApplicationContext(), "Product Listing and Bank Details are not Completed!", Toast.LENGTH_SHORT).show();
-            else
-                Toast.makeText(getApplicationContext(), "Only Business Details are completed!", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(),MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
+//            if (doneBusinessDetails.equals("doneBusiness") && doneDocumentation.equals("doneDocument") && doneBankingDetails.equals("doneBank") && doneProductListing.equals("doneProducts"))
+//                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+//            else if (doneBusinessDetails.equals("doneBusiness") && doneDocumentation.equals("doneDocument") && doneBankingDetails.equals("doneBank"))
+//                Toast.makeText(getApplicationContext(), "Product Listing is not Completed!", Toast.LENGTH_SHORT).show();
+//            else if (doneBusinessDetails.equals("doneBusiness") && doneDocumentation.equals("doneDocument"))
+//                Toast.makeText(getApplicationContext(), "Product Listing and Bank Details are not Completed!", Toast.LENGTH_SHORT).show();
+//            else
+//                Toast.makeText(getApplicationContext(), "Only Business Details are completed!", Toast.LENGTH_SHORT).show();
         });
 
     }

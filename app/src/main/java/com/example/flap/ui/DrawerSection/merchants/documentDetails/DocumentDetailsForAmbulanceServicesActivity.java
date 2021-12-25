@@ -7,9 +7,12 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.flap.R;
+import com.example.flap.ui.DrawerSection.merchants.UploadingDetailsActivity;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.Objects;
@@ -18,7 +21,7 @@ public class DocumentDetailsForAmbulanceServicesActivity extends AppCompatActivi
 
     private MaterialButton addressProofAmbulance, gstNumberAmbulance, agencyLicense, agencyPhoto, agencyOwnerPhoto, agencyOwnerSignature;
     private ImageView addressProofAmbulancePreview, gstNumberAmbulancePreview, agencyLicensePreview, agencyPhotoPreview, agencyOwnerPhotoPreview, agencyOwnerSignaturePreview;
-
+    private Button saveDocuments;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +35,7 @@ public class DocumentDetailsForAmbulanceServicesActivity extends AppCompatActivi
         agencyPhoto = findViewById(R.id.agencyPhoto);
         agencyOwnerPhoto = findViewById(R.id.agencyOwnerPhoto);
         agencyOwnerSignature = findViewById(R.id.agencyOwnerSignature);
+        saveDocuments=findViewById(R.id.saveDocumentForAmbulance);
 
 //        getting ids for ImageView
         addressProofAmbulancePreview = findViewById(R.id.addressProofAmbulancePreview);
@@ -83,6 +87,14 @@ public class DocumentDetailsForAmbulanceServicesActivity extends AppCompatActivi
             @Override
             public void onClick(View v) {
                 startActivityForResult(Intent.createChooser(new Intent().setType("image/*").setAction(Intent.ACTION_GET_CONTENT), "Select Picture"), 60);
+            }
+        });
+
+        saveDocuments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Document Submitted", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), UploadingDetailsActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
             }
         });
 
