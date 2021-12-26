@@ -1,17 +1,17 @@
 package com.example.flap.ui.home.HelpBox;
 
-public class helpModel {
-    String name, emailAddress, phoneNumber, message;
+public class HelpModel {
+    String name, emailAddress, phoneNumber, message,helpId;
 
-    public helpModel() {
-
+    public HelpModel() {
     }
 
-    public helpModel(String name, String emailAddress, String phoneNumber, String message) {
+    public HelpModel(String name, String emailAddress, String phoneNumber, String message, String helpId) {
         this.name = name;
         this.emailAddress = emailAddress;
         this.phoneNumber = phoneNumber;
         this.message = message;
+        this.helpId = helpId;
     }
 
     public String getName() {
@@ -44,5 +44,13 @@ public class helpModel {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getHelpId() {
+        return helpId;
+    }
+
+    public void setHelpId(String helpId) {
+        this.helpId = helpId;
     }
 }

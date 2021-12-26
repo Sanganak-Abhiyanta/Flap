@@ -128,5 +128,8 @@
     <string name="submit_document">Submit Document</string>
     <string name="address">Address</string>
     <string name="photo">Photo</string>
+    <string name="submit_query">Submit Query</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="please_leave_your_message">Please Leave your Message</string>
 
 </resources>
